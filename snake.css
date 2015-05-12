@@ -1,0 +1,33 @@
+div {
+    display: block;
+    margin: 5% auto;    
+    width: 300px;
+}
+
+canvas {
+    border: 1px solid #ccc;
+}
+
+a, p {
+    font: 15px arial, sans-serif;
+    margin: 0;
+}
+
+#tweet {
+    display: none;
+    margin: 0 auto;    
+    position: relative;
+    top: -150px;
+    width: 124px;    
+}
+
+#menu {
+    position: relative;
+    text-align: center;
+    top: -227px;    
+}
+
+#play {
+    position: relative;
+    top: 16px;
+}

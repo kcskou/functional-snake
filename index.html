@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Kelvin's Snake Game</title>
+        <link rel="stylesheet" type="text/css" href="normalize.css" />
+		<link rel="stylesheet" type="text/css" href="snake.css" />
+        <script type="text/javascript" src="snake.js"></script>
+	</head>
+	<body>
+        <div>
+            <canvas id="snake-game" width="300px" height="300px">
+                Sorry, your browser does not support Canvas. Try a different browser?
+                <a href="http://www.mozilla.org/en-US/firefox/">Get Firefox</a> or
+                <a href="http://www.google.com/chrome/browser/">Get Chrome</a>.
+            </canvas>
+            <p id="score">My Score: <span>0</span></p>
+            <p id="high-score"></p>
+            <a href="#" id="tweet" target="_blank" rel="nofollow">Tweet My Score!</a>
+            <div id="menu">
+                <p>Use arrow keys or WASD keys<br />to move the snake!</p>
+                <a href="#" onclick="document.snakeGame.run();" id="play">I am ready!</a>
+            </div>
+        </div>
+        <audio preload="true" id="food-eaten">
+            <source src="foodeaten.wav" />
+        </audio>
+        <script type="text/javascript">
+            document.snakeGame = new Game();
+        </script>
+	</body>
+</html>
